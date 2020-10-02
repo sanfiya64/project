@@ -1,0 +1,25 @@
+public with sharing class navclass {
+   public List<Account> al = new List<Account>();
+    public navclass()
+    {
+    
+    }
+    
+    public List<SelectOption> lst
+    {
+        get
+        {
+            al = [Select name,phone from Account];
+            
+            lst = new List<SelectOption>();
+            
+            for(Account ac : al)
+            {
+                lst.add(new SelectOption(ac.name,ac.name));
+            }
+            return lst;
+        }
+        set;
+    }
+    
+}

@@ -1,0 +1,12 @@
+<template>
+        <b><center>SIGN UP FOR CUSTOMER</center></b>
+    <lightning-card>
+        <lightning-record-form
+            object-api-name={objectApiName}
+            fields={acc}
+            rows="2"
+            columns="2"
+            onsuccess={handleSuccess}>
+        </lightning-record-form>
+    </lightning-card>
+</template>

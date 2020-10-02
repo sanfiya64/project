@@ -1,0 +1,9 @@
+<apex:page controller="navclass">
+ 
+  <apex:form >
+      <apex:selectList size="1">
+          <apex:selectOptions value="{!lst}"></apex:selectOptions>
+      </apex:selectList>
+   </apex:form>
+ 
+</apex:page>

@@ -1,0 +1,9 @@
+public class Accountcontroller {
+   private final Account acc;
+    public Accountcontroller(ApexPages.StandardController con)
+    {
+        this.acc=(Account)con.getRecord();
+    }
+    
+
+}
